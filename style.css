@@ -1,0 +1,519 @@
+/* **************************RESET************************** */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* **************************GENERAL************************** */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    max-width: 1400px;
+}
+
+body {
+    overflow: scroll;
+    margin: 0 3%;
+    max-width: 1400px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* ********************************NAVBAR******************************* */
+
+.navbar {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* *************LOGO************* */
+
+#logo {
+    width: 3rem;
+}
+
+/* *************MENU************* */
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.menu {
+    display:flex;
+    height: 100%;
+    align-items: center;
+    border-top: 3px transparent solid;
+    padding: 0px 30px 0 30px;
+
+}
+
+.menu:hover {
+    color:#0065FC;
+    border-top: 3px #0065FC solid;
+}
+/* **************************SECTION*1*RECHERCHE************************** */
+
+.section_recherche {
+    margin: 20px 0;
+}
+
+.titre1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+
+.titre2, .information {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    width: 100%;
+}
+
+/* ******RECHERCHE****** */
+
+.bloc_recherche {
+    padding: 10px 0;
+}
+
+.formulaire_recherche {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.logo_location {
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+#ville {
+    height: 50px;
+    width: 230px;
+    font-size: 0.6rem;
+    border: 1px solid #F2F2F2;
+    outline: none;
+    padding-left: 1%;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+#rechercher, #loupe {
+    font-size: 0.9rem;
+    font-weight:500;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    padding: 0 15px;
+}
+
+
+/* **************************SECTION*2*FILTRES************************** */
+.section_filtres {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titre_filtres {
+    width: 9%;
+    font-size: 0.9rem;
+    padding:21px 21px 21px 0;
+    font-weight: 600;
+}
+
+.boutons_filtres {
+    width: 91%;
+    display:flex;
+    justify-content: flex-start;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+.lien_filtre {
+    margin: 3px 0;
+}
+
+.lien_filtre :hover {
+    background-color: #DEEBFF;
+}
+
+.filtre {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 10px;
+    border: 2px solid #D9D9D9;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+}
+
+
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog{
+    color: #0065FC;
+    font-size: 1.3em;
+    padding: 2px 11px 4px 4px;
+}
+
+/* ***INFO*** */
+
+
+#logo_info {
+    color: #0065FC;
+    margin: 10px;
+    padding: 4px 8px;
+    font-size: 0.5rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+}
+/* .information est dans section1 avec .titre2 */
+
+
+/* **************************SECTION*3*HEBERGEMENT************************** */
+
+.section_hebergements {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ***********BLOCS*GRIS*********** */
+
+.hebergements_1{
+    background-color: #F2F2F2;
+    border-radius: 18px;
+    width: 66%;
+    padding: 35px;
+}
+
+.hebergements_2{
+    background-color: #F2F2F2;
+    border-radius: 18px;
+    width: 31%;
+    padding: 35px;
+}
+/* **********TITRES*BLOCS********** */
+.titre_hebergements {
+    padding-bottom: 23px;
+}
+
+.entete_populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+#logo_populaires {
+    color: #0065FC;
+    font-size: 0.9rem;
+}
+
+.afficher_plus {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-top: 20px;
+
+}
+
+/* **********CARD*HEBERGEMENT********** */
+
+/* toutes les cards hebergement */ 
+.cards_hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.9em
+}
+
+/* chaque card hebergement */ 
+
+.lien_hebergements {
+    padding-bottom: 25px;
+}
+
+.card_hebergements {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(97, 97, 97, 0.2);
+    width: 240px;
+
+}
+
+.bloc_img_heb {
+    display: flex;
+    overflow: hidden;
+    height: 108px;
+}
+
+.img_heb {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 13px 13px 0 0;
+}
+
+.description_cards_hebergements {
+    padding: 9px 9px 2px 9px;
+    line-height: 0.7em;
+}
+
+.txt_titre_hebergements {
+    font-size: 0.8rem;
+    font-weight: 600;
+
+}
+
+.txt_hebergements {
+    font-size: 0.7rem;
+    line-height: 2.2em;
+}
+
+.etoiles_hebergements {
+    font-size: 0.6rem;
+}
+
+.fa-star{
+    color: #0065FC; /* etoiles*/
+}
+
+.fa-star:nth-child(5) {
+    color: #F2F2F2; /* etoiles */
+}
+
+/* **********CARDS*POPULAIRES********* */
+
+/* toutes les cards populaires */
+
+.cards_populaires {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.7em;
+    
+}
+
+/* chaque card populaires */
+
+.lien_populaires {
+    width: 100%;
+    
+}
+
+.card_populaires {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(97, 97, 97, 0.2);
+    width: 100%;
+    display: flex;
+}
+
+.bloc_img_pop {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 130px;
+    border-radius: 13px 0 0 13px;
+}
+
+.img_pop {
+    height: 100%;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 13px 0 0 13px;
+}
+.description_cards_populaires {
+    padding: 9px 0px 9px 19px;
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titre_card_populaires {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.txt_card_populaires {
+    font-size: 0.7rem;
+    padding: 10px 0;
+
+}
+
+.etoiles_populaires {
+    width: 100%;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* **************************SECTION*4*ACTIVITE*MARSEILLE************************** */
+.section_activites {
+    padding: 3% 0;
+}
+
+.titre_activites {
+    font-weight: 600;
+    width: 100%;
+    padding-top: 24px;
+}
+
+.cards_activites{
+    display: flex;
+    justify-content: space-between;
+    gap: 2%; /*pour pas que ce soit collé quand on rétrécit */
+    flex-wrap: wrap; /*pour que la card aille a la ligne quand on rétrécit */
+}
+
+.card_activite {
+    box-shadow: 0 4px 8px 0 rgba(97, 97, 97, 0.2);
+    border-radius: 20px;
+    width: 300px;
+    margin: 2% 0%; /*pour pas que les cards soient collées quand on rétrécit */
+}
+
+.lien_activite{
+    width: 100%;
+}
+
+.bloc_img_act {
+    width: 100%;
+    height: 375px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.img_act {
+    height: 120%;
+}
+
+.txt_activite {
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 7% 5% 6% 5%;
+}
+
+
+/* **************************FOOTER************************** */
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.liste_footer {
+    padding: 2% 11% 2% 5%;
+}
+
+.titre_liste_footer {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 3em;
+}
+
+footer li {
+    font-size: 0.8rem;
+    line-height: 1.8em;
+}
+
+/* ******************DESKTOP****************** */
+
+@media all and (min-width: 768px) {
+    #loupe {
+        display: none;
+    }
+}
