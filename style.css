@@ -298,7 +298,7 @@ h3 {
 .afficher_plus {
     font-size: 0.9rem;
     font-weight: 600;
-    padding-top: 20px;
+    padding-top: 40px;
 
 }
 
@@ -309,14 +309,11 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 0.9em
+    gap: 1.5em
 }
 
 /* chaque card hebergement */ 
 
-.lien_hebergements {
-    padding-bottom: 25px;
-}
 
 .card_hebergements {
     background-color: white;
@@ -510,10 +507,130 @@ footer li {
     line-height: 1.8em;
 }
 
-/* ******************DESKTOP****************** */
+/* ****************************DESKTOP**************************** */
 
 @media all and (min-width: 768px) {
     #loupe {
         display: none;
     }
+}
+
+/* ****************************TABLETTE**************************** */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+    body {
+        margin: 0 7%;
+    }
+
+    /* *****NAVBAR***TAB*** */
+
+    .menu:hover {
+        color:#0065FC;
+        border-bottom: 3px #0065FC solid;
+        border-top: 3px transparent solid;
+    }
+
+    /* *****FILTRES***TAB***** */
+
+    .titre_filtres {
+        width: auto;
+    }
+
+    .boutons_filtres {
+        gap: 0%;
+        justify-content: space-between;
+        min-width: 672px;
+    }
+
+    .filtre {
+        padding: 8px 14px;
+    }
+
+    .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+        display: flex;
+    }
+
+    /* *****HEBERGEMENT***TAB***** */
+    
+    .section_hebergements {
+        flex-wrap: wrap;
+    }
+
+    .hebergements_1 {
+        width: 100%;
+    }
+
+    .hebergements_2 {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .cards_hebergements {
+        gap: 1.1em;
+    }
+
+    /* *****POPULAIRES***TAB***** */
+
+    .cards_populaires {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .lien_populaires {
+        width: 31%;
+    }
+
+    .card_populaires {
+        width: 100%;
+    }
+
+    .titre_card_populaires {
+        font-size: 0.7rem;
+        line-height: 1.2em;
+    }
+
+    .txt_card_populaires {
+        font-size: 0.6rem;
+        padding: 10px 0 0 0;
+    }
+
+    .description_cards_populaires {
+        width: 213px;
+    }
+
+    /* *****ACTIVITE***TAB***** */
+
+    .card_activite {
+        width: 21%;
+    }
+
+    .bloc_img_act {
+        height: 219px;
+    }
+
+    .img_act {
+        height: 128%;
+    }
+
+    .txt_activite {
+        padding: 6% 10%;
+        height: 3.2em;
+        display: flex;
+        align-items: center;
+    }
+
+    /* *****FOOTER***TAB***** */
+
+    footer li {
+        line-height: 1.9em;
+    }
+
+    .liste_footer {
+        padding-right: 4%;
+    }
+
+
+    /* .img_act + bloc_img_act pour dimension imag */
 }
