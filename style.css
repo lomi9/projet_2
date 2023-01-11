@@ -634,3 +634,249 @@ footer li {
 
     /* .img_act + bloc_img_act pour dimension imag */
 }
+
+/* ******************MOBILE****************** */
+
+@media all and (max-width: 767px) {
+
+    body {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap ;
+    }
+
+    main {
+        background-color: white;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    /* *****NAVBAR***MOB***** */
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .lien_logo_booky {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #logo {
+        padding: 5% 0;
+    }
+
+    .nav {
+        height: 4em;
+        width: 100%;
+    }
+
+    .menu {
+        width: 50%;
+        justify-content: center;
+        border-bottom: 3px #F2F2F2 solid;
+        border-top: 3px transparent solid;
+    }
+
+    .menu:hover {
+        color:#0065FC;
+        border-bottom: 3px #0065FC solid;
+        border-top: 3px transparent solid;
+    }
+
+    /* *****RECHERCHE***MOB***** */
+
+    .section_recherche {
+        margin: 9% 5% 0 5%;
+    }
+
+    .titre1 {
+        font-size: 1.1rem;
+    }
+
+    .bloc_recherche {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    form { 
+        width: 100%;
+    }
+
+    .logo_location {
+        width: 67px;
+    }
+
+    #ville {
+        width: 100%;
+    }
+
+    #rechercher {
+        display: none;
+    }
+
+    #loupe {
+        font-size: 0.7rem;
+        padding: 0 18px;
+        font-weight: bold;
+    }
+
+    /* *****FILTRES***MOB***** */
+
+    .section_filtres {
+        margin: 0 20px;
+    }
+
+    .titre_filtres {
+        width: 100%;
+    }
+
+    .lien_filtre {
+        width: 50%;
+    }
+
+    .boutons_filtres {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0% 6%;
+    }
+
+    .filtre {
+        width: 159px;
+        font-size: 0.6rem;
+        margin: 5px 0;
+        padding: 11px 10px;
+        border-radius: 27px;
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+            font-size: 1.8em;
+            padding: 2px 6px 2px 0px;
+        }
+
+    #logo_info {
+        margin: 0 11px 0 0;
+        display: flex;
+        align-self: flex-start;
+        font-size: 0.7rem;
+        padding: 4px 9px;
+    }
+
+    .information {
+        padding: 40px 0;
+    }
+
+    /* *****HEBERGEMENT***MOB***** */
+
+    .section_hebergements {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .hebergements_1 {
+        width: 100%;
+        background-color: white;
+        border-radius: 0;
+        padding: 0 20px 40px 20px;
+    }
+
+    .titre_hebergements {
+        padding-top: 20px;
+    }
+
+    .cards_hebergements {
+        justify-content: center;
+        gap: 0.7em;
+    }
+
+    .card_hebergements {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .lien_hebergements {
+        width: 100%;
+    }
+
+    .bloc_img_heb {
+        height: 121px;
+    }
+
+    .afficher_plus{
+        display: none;
+    }
+
+    /* *****POPULAIRES***MOB***** */
+
+    .hebergements_2 {
+        width: 100%;
+        border-radius: 0;
+        padding: 0 20px 50px 20px;
+    }
+
+    .entete_populaires {
+        padding: 7% 0 ;
+        width: 100%;
+    }
+
+    .cards_populaires {
+        gap: 0.7em;
+    }
+
+
+    .card_populaires {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .img_pop {
+        width: 140px;
+    }
+
+    /* *****ACTIVITES***MOB***** */
+
+    .section_activites {
+        padding: 0 5%;
+    }
+
+    .titre_activites {
+        width: 50%;
+
+    }
+
+    .card_activite {
+        display: flex;
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 32px;
+    }
+
+    .lien_activites {
+        width: 100%;
+    }
+
+    .bloc_img_act {
+        height: 129px;
+    }
+
+    .img_act {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* *****FOOTER***MOB***** */ 
+
+    footer {
+        flex-direction: column;
+    }
+
+    }
