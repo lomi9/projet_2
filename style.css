@@ -465,7 +465,7 @@ h3 {
 .card_activite {
     box-shadow: 0 4px 8px 0 rgba(97, 97, 97, 0.2);
     border-radius: 20px;
-    width: 300px;
+    width: 22%;
     margin: 20px 0; /*pour pas que les cards soient collées quand on rétrécit */
 }
 
