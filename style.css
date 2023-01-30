@@ -268,10 +268,6 @@ h3 {
     justify-content: space-between;
 }
 
-.euro {
-    font-weight: 700;
-}
-
 /* ***********BLOCS*GRIS*********** */
 
 .hebergements_1{
@@ -509,7 +505,7 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 12%;
+    gap: 13%;
 }
 
 .liste_footer {
